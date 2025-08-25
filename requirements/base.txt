@@ -1,0 +1,38 @@
+# Core PaperQA2 dependencies
+paper-qa>=5.0.0
+litellm>=1.50.0
+numpy>=1.24.0
+pandas>=2.0.0
+pydantic>=2.0.0
+
+# GROBID integration
+grobid-client-python>=0.0.7
+grobid-tei-xml>=0.1.0
+
+# XML/HTML parsing
+lxml>=4.9.0
+beautifulsoup4>=4.12.0
+
+# Local LLM support
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# Text processing
+sentence-transformers>=2.2.0
+transformers>=4.35.0
+
+# Vector store
+faiss-cpu>=1.7.4
+
+# CLI
+click>=8.1.0
+rich>=13.0.0
+typer>=0.9.0
+
+# Configuration
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Utils
+tqdm>=4.66.0
+tenacity>=8.2.0

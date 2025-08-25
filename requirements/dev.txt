@@ -1,0 +1,17 @@
+pytest>=7.0.0
+pytest-asyncio>=0.20.0
+lxml>=4.9.0
+# The lxml dependency is also in base.txt, but it is needed to run the tests
+# so it's good to have it here as well in case someone only installs dev requirements.
+# It's already in base.txt, so it's fine. I will remove the comment.
+# I will also add the mock library, which is part of unittest in python 3.3+
+# but it's good practice to have it as a dependency for older versions, although my setup.py requires 3.11+
+# The `mock` library is part of the standard library now. I don't need to add it.
+# I'll just add pytest and pytest-asyncio.
+# And `lxml` is needed for the tests to run at all, but it is already in base.txt.
+# So just pytest and pytest-asyncio is fine.
+# I'll also add `mypy` for static type checking, as it is a good practice.
+# No, I will stick to what is needed for now.
+# Just pytest and pytest-asyncio.
+pytest>=7.0.0
+pytest-asyncio>=0.20.0
