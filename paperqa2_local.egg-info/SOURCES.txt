@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-setup.py
-paperqa2_local.egg-info/PKG-INFO
-paperqa2_local.egg-info/SOURCES.txt
-paperqa2_local.egg-info/dependency_links.txt
-paperqa2_local.egg-info/top_level.txt
