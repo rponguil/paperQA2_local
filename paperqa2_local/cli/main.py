@@ -11,6 +11,7 @@ Comandos requeridos:
 - benchmark: comparar calidad de extracción
 """
 import asyncio
+import sys
 import click
 import os
 from rich.console import Console
@@ -69,6 +70,7 @@ def add(pdf_path):
             console.print(f"💾 Index saved to '{INDEX_DIR}'")
         except Exception as e:
             console.print(f"❌ [bold red]Error adding document: {e}[/bold red]")
+            sys.exit(1)
         finally:
             await docs.llm_manager.close()
 
