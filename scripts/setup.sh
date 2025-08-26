@@ -28,8 +28,11 @@ fi
 echo "📥 Activating venv and installing dependencies from requirements/base.txt..."
 source "$VENV_DIR/bin/activate"
 pip install --upgrade pip
-pip install -r requirements/base.txt
-echo "✅ Dependencies installed."
+echo "⬇️ Installing CPU-only version of PyTorch to save space..."
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+echo "✅ PyTorch (CPU) installed."
+pip install -r requirements/base.txt -r requirements/dev.txt
+echo "✅ Project dependencies installed."
 
 # 4. Install the package in editable mode
 echo "🛠️ Installing 'paperqa2-local' in editable mode..."
